@@ -1,0 +1,23 @@
+﻿@page
+@model JoesPizzaNation.Pages.Checkout.CheckoutModel
+@{
+}
+
+<h1>Order Details</h1>
+@{
+    var imagePath = "~/images/Pizzas/" + (@Model.ImageUrl + ".png");
+    
+}
+<div class="align-content-center">
+    <div class="col-2 mx-auto mb-5">
+        <img src=@imagePath class="w-100" asp-append-version="true" />
+        <p> Your Ordered Pizza @Model.PizzaName will be ready to prepare</p>
+        <p> Quantity : 1</p>
+        <p>Total Amount: Rs @Model.PizzaPrice</p>
+        <br />
+        <a class="btn alert-primary mt-1 mx-auto" asp-area="" asp-page="ThankYou" 
+        asp-route-ImageUrl="@Model.ImageUrl" asp-route-PizzaPrice="@Model.PizzaPrice"
+           asp-route-PizzaName="@Model.PizzaName" asp-route-OrderId="@Model.OrderId">
+            Confirm  </a>
+    </div>
+</div>

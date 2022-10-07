@@ -1,0 +1,52 @@
+html {
+  font-size: 16px;
+}
+
+@media (min-width: 700px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    margin-bottom: 40px;
+
+
+
+    overflow-x: hidden;
+   
+}
+
+.mainEffect{
+    padding: 40px 30px; 
+  
+}
+
+.mainImage {
+    border-radius: 30px;
+    filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.3));
+    margin: 20px;
+    width: 1000px;
+    height: 500px;
+}
+
+.mainSub {
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.makeDiv {
+    background:red;
+    margin: 0;
+
+}
+
+.makeText{
+    margin:100px 20px 30px 0px;
+    color: yellow;
+}
